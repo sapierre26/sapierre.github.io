@@ -4,6 +4,8 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-green-dark: #808000;
+  --cg-green-light: #8A9A5B;
 }
 
 html {
@@ -34,7 +36,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: var(--cg-black);
+  background-color: var(--cg-green-dark);
   color: var(--cg-white);
   padding: 0px 0px;
 
@@ -61,10 +63,11 @@ body {
   letter-spacing: 2px;
 
   font-family: monospace;
+  font-size: 20px;
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-green-light);
   text-decoration: underline;
 }
 
