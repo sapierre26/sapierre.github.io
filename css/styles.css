@@ -107,6 +107,7 @@ main {
   justify-content: center;
   font-size: 40px;
   font-family: Georgia;
+  color: var(--cg-green-dark)
 }
 
 /* CSS for portfolio grid */
@@ -119,13 +120,6 @@ main {
 
   /* Debug border */
   /* border: 2px solid blue; */
-}
-
-.item-link {
-  width: 70%;
-
-  /* Debug border */
-  /* border: 2px solid red; */
 }
 
 .project-image {
@@ -163,6 +157,7 @@ main {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 17px;
 }
 
 .project-details a:hover {
@@ -220,17 +215,28 @@ main {
 
 /* CSS for resume page */
 
+.resume {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
 .button {
   background-color: var(--cg-green-dark);
   border: none;
   color: var(--cg-white);
 
   font-family: monospace;
+  font-size: 17px;
 
   padding: 14px 16px;
   text-align: center;
 
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -239,6 +245,12 @@ main {
 
 .resume h2 {
   font-family: Georgia;
+}
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 /* CSS for contact form */
