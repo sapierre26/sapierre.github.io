@@ -117,9 +117,14 @@ main {
   flex-direction: row;
   max-width: 100%;
   margin: 1em 0 2em 0;
+  transition: transform 0.3s ease;
 
   /* Debug border */
   /* border: 2px solid blue; */
+}
+
+.project:hover {
+  transform: scale(1.03);
 }
 
 .project-image {
@@ -237,10 +242,12 @@ main {
 
   border-radius: 2px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .button:hover {
   background-color: var(--cg-green-light);
+  transform: scale(1.03);
 }
 
 .resume h2 {
