@@ -4,8 +4,8 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
-  --cg-green-dark: #808000;
-  --cg-green-light: #8A9A5B;
+  --cg-green-dark: 	#454B1B;
+  --cg-green-light: #808000;
 }
 
 html {
@@ -38,7 +38,7 @@ body {
 
   background-color: var(--cg-green-dark);
   color: var(--cg-white);
-  padding: 0px 0px;
+  padding: 14px 16px;
 
   /* Debug border */
   /* border: solid red; */
@@ -50,9 +50,30 @@ body {
   position: relative;
   right: 30px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   /* Debug border */
   /* border: solid blue; */
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+.nav-list li a {
+    display: block;
+    color: var(--cg-white);
+    text-align: center;
+    padding: 16px;
+}
+
+.nav-list li a:hover {
+    background-color: var(--cg-green-light);
+    color: var(--cg-white);
+    text-decoration: underline;
 }
 
 .navbar a {
@@ -63,16 +84,6 @@ body {
   letter-spacing: 2px;
 
   font-family: monospace;
-  font-size: 20px;
-}
-
-.navbar a:hover {
-  color: var(--cg-green-light);
-  text-decoration: underline;
-}
-
-.navbar a:active {
-  color: var(--cg-blue);
 }
 
 .logo a {
@@ -184,7 +195,13 @@ main {
 .about-image img {
   max-width: 300px;
   border-radius: 3px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
 }
 
 .about-text {
@@ -258,7 +275,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
+  background-color: var(--cg-green-dark);
   color: var(--cg-white);
   position: absolute;
   bottom: 0;
